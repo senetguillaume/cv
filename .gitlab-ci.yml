@@ -8,4 +8,5 @@ createpages:
     paths:
       - public
   only:
-    - main
+    - master
+  
