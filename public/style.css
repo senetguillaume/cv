@@ -1,0 +1,175 @@
+:root{
+  --bg:#f6f7f9;
+  --card:#ffffff;
+  --accent:#0b5fff;
+  --text:#0b1b2b;
+  --shadow:0 6px 20px rgba(11,27,43,0.06);
+  --radius:12px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* ---- Navigation ---- */
+.nav-header{
+  width:100%;
+  background:var(--card);
+  box-shadow:var(--shadow);
+  padding:16px 32px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.logo{
+  font-size:1.3rem;
+  font-weight:700;
+  color:var(--accent);
+}
+
+.nav-menu{
+  display:flex;
+  gap:22px;
+}
+
+.nav-menu a{
+  text-decoration:none;
+  color:var(--text);
+  padding:6px 10px;
+  border-radius:6px;
+  transition:0.2s ease;
+}
+
+.nav-menu a:hover{
+  background:var(--accent);
+  color:white;
+}
+
+.nav-menu .active{
+  background:var(--accent);
+  color:#fff;
+}
+
+/* ---- Layout Principal ---- */
+.container{
+  max-width:1100px;
+  margin:40px auto;
+  padding:24px;
+}
+
+.intro-header{
+  display:flex;
+  gap:32px;
+  align-items:flex-start;
+}
+
+.visual{
+  flex:0 0 260px;
+  height:200px;
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.visual img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.title{
+  flex:1;
+}
+
+h1{
+  font-size:1.8rem;
+  margin-bottom:12px;
+}
+
+.card{
+  background:var(--card);
+  padding:22px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  line-height:1.6;
+}
+
+/* ---- Footer ---- */
+.footer{
+  margin-top:40px;
+  font-size:0.95rem;
+  text-align:center;
+  color:#5d6b78;
+}
+
+/* ---- Responsive ---- */
+@media(max-width:780px){
+  .intro-header{
+    flex-direction:column;
+  }
+  .visual{
+    width:100%;
+    height:180px;
+  }
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background: #FFFFFF;
+    opacity: 0.35;
+    margin: 1.5rem 0 2rem 0;
+    border-radius: 2px;
+}
+
+.formations {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.titre-section {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.carte-formation {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform .2s ease;
+}
+
+.carte-formation:hover {
+    transform: translateY(-4px);
+}
+
+.carte-formation h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.carte-formation .annee {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #666;
+}
