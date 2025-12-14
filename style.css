@@ -15,8 +15,13 @@
 
 body{
   font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background:var(--bg);
+  background-image: url('fond.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color:var(--text);
+  min-height: 100vh;
 }
 
 /* ---- Navigation ---- */
@@ -69,24 +74,29 @@ body{
   padding:24px;
 }
 
-.intro-header{
-  display:flex;
-  gap:32px;
-  align-items:flex-start;
+.content-wrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.visual{
-  flex:0 0 260px;
-  height:200px;
-  border-radius:var(--radius);
-  overflow:hidden;
-  box-shadow:var(--shadow);
+.profile-image {
+  flex: 0 0 220px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  border: 4px solid var(--card);
+  background: #e0e0e0;
 }
 
-.visual img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .title{
@@ -94,21 +104,28 @@ body{
 }
 
 h1{
-  font-size:1.8rem;
-  margin-bottom:12px;
+  font-size:2rem;
+  margin-bottom:20px;
+  color: #242424;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .card{
   background:var(--card);
-  padding:22px;
+  padding:28px;
   border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  line-height:1.6;
+  box-shadow:0 8px 24px rgba(11,27,43,0.12);
+  line-height:1.7;
+}
+
+.intro {
+  font-size: 1rem;
 }
 
 /* ---- Footer ---- */
 .footer{
   margin-top:40px;
+  padding: 20px;
   font-size:0.95rem;
   text-align:center;
   color:#5d6b78;
@@ -116,11 +133,13 @@ h1{
 
 /* ---- Responsive ---- */
 @media(max-width:780px){
-  .intro-header{
+  .content-wrapper{
     flex-direction:column;
+    align-items: center;
   }
-  .visual{
-    width:100%;
+
+  .profile-image{
+    width:180px;
     height:180px;
   }
 }
