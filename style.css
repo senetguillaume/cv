@@ -564,3 +564,47 @@ h1{
         align-self: flex-start;
     }
 }
+
+/* ---- PAGE CONTACT ---- */
+.contact-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.contact-card li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s ease;
+}
+
+.contact-card li a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card li a:hover {
+    text-decoration: underline;
+}
+
+.contact-card li::before {
+    content: "✉️";
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Icônes réseaux sociaux */
+.social-link::before {
+    content: "🔗";
+    margin-right: 6px;
+}
+
+.contact-card p {
+    margin-top: 16px;
+    font-style: italic;
+    color: #555;
+}
