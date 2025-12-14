@@ -1,10 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Réalisations - Guillaume SENET</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<header class="nav-header">
+    <h2 class="logo">Guillaume SENET</h2>
+    <nav class="nav-menu">
+        <a href="accueil.html">Accueil</a>
+        <a href="formations.html">Formations</a>
+        <a href="compétences.html">Compétences</a>
+        <a href="realisations.html" class="active">Réalisations</a>
+        <a href="centres.html">Centres d'intérêt</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h1 class="titre-section">Mes Réalisations</h1>
+
+    <!-- Projet Personnel en vedette -->
+    <section class="projet-vedette">
+        <div class="projet-vedette-header">
+            <h2>Projet Personnel</h2>
+        </div>
+        <div class="projet-card featured">
+            <div class="projet-header">
+                <h3>Prototype de jeu Unity 6</h3>
+                <span class="projet-date">Avril 2025 - En cours</span>
+            </div>
+            <div class="projet-body">
+                <p class="projet-description">
+                    Développement d'un prototype de jeu vidéo personnel sous Unity 6 utilisant C#.
+                    Le projet vise à mettre en
+                    œuvre et aussi approfondir mes compétences en programmation orientée objet et en game design.
+                </p>
+                <h4>Compétences acquises :</h4>
+                <ul class="competences-liste">
+                    <li>Programmation en C# dans l'environnement Unity</li>
+                    <li>Gestion de projet en autonomie</li>
+                </ul>
+                <div class="projet-liens">
+                    <p>🔗 Prototype en développement (non publié)</p>
+                    <img src="unity.png" alt="capture d'écran du jeu"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Académiques et Autres -->
+    <section class="projets-grid-section">
+        <h2 class="section-subtitle">Projets Académiques</h2>
+
+        <div class="projets-grid">
+            <!-- Projet 1 -->
+            <div class="projet-card">
+                <div class="projet-header">
+                    <h3>DÉDALE — Jeu de Labyrinthes</h3>
+                    <span class="projet-date">octobre 2025 - novembre 2025</span>
+                </div>
+                <div class="projet-context">
+                    <strong>Contexte :</strong> BUT Informatique - 3ᵉ semestre, projet en équipe
+                </div>
+                <div class="projet-body">
+                    <p class="projet-description">
+                        Développement d’un jeu de labyrinthes en Java avec interface graphique.
+                        Le joueur doit atteindre la sortie dans des labyrinthes générés aléatoirement.
+                        Deux modes : Libre (taille et murs personnalisables) et Progression (plusieurs niveaux, scores et sauvegardes).
+                    </p>
+                    <h4>Compétences acquises :</h4>
+                    <ul class="competences-liste">
+                        <li>Programmation orientée objet en Java (MVC, héritage, composition, polymorphisme)</li>
+                        <li>Application des principes SOLID</li>
+                        <li>Gestion d’algorithmes complexes : DFS, BFS, A*</li>
+                        <li>Conception et justification de diagrammes UML évolutifs</li>
+                    </ul>
+                    <div class="projet-liens">
+                        <a href="lien-vers-code.zip" class="lien-preuve">Lien Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="projet-card">
+                <div class="projet-header">
+                    <h3>Mini projet Agile</h3>
+                    <span class="projet-date">septembre 2025</span>
+                </div>
+                <div class="projet-context">
+                    <strong>Contexte :</strong> BUT Informatique - 3ᵉ semestre, projet en équipe
+                </div>
+                <div class="projet-body">
+                    <p class="projet-description">
+                        Développement d’un roguelike spatial en Java, conçu en équipe selon une
+                        méthodologie Agile. Le jeu repose sur un système tour par tour avec
+                        exploration de planètes générées aléatoirement, combats stratégiques,
+                        gestion d’inventaire et progression par niveaux.
+                    </p>
+                    <h4>Compétences acquises :</h4>
+                    <ul class="competences-liste">
+                        <li>Programmation orientée objet en Java</li>
+                        <li>Conception de systèmes de jeu (combat, inventaire, progression)</li>
+                        <li>Travail en équipe avec méthodologie Agile / Scrum</li>
+                        <li>Analyse critique via rétrospectives de sprint</li>
+                    </ul>
+                    <div class="projet-liens">
+                        <a href="lien-vers-code.zip" class="lien-preuve">Lien Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="projet-card">
+                <div class="projet-header">
+                    <h3>LudoTris - Tetris Éducatif</h3>
+                    <span class="projet-date">novembre 2024 - décembre 2024</span>
+                </div>
+                <div class="projet-context">
+                    <strong>Contexte :</strong> BUT Informatique (Binôme) - 2ᵉ semestre
+                </div>
+                <div class="projet-body">
+                    <p class="projet-description">
+                        Développement d'un jeu ludo-pédagogique combinant Tetris et quiz éducatif.
+                        Deux joueurs s'affrontent sur leurs propres plateaux, avec un système de questions
+                        toutes les huit manches offrant bonus ou malus.
+                        Développé en IJava avec VSCode, le jeu intègre l'externalisation des données (questions
+                        stockées en fichier externe) et un contrôle robuste des saisies utilisateur.
+                    </p>
+                    <h4>Compétences acquises :</h4>
+                    <ul class="competences-liste">
+                        <li>Algorithmique et structuration modulaire du code</li>
+                        <li>Programmation orientée objet</li>
+                        <li>Externalisation et gestion des données</li>
+                        <li>Travail en binôme et communication d'équipe</li>
+                    </ul>
+                    <div class="projet-liens">
+                        <a href="https://gitlab.univ-lille.fr/guillaume.senet.etu/sae-but1/-/tree/main/SAE_1.02_Ludotris_SENET_LECNIK_Guillaume_Liam_F?ref_type=heads" class="lien-preuve">Lien Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 4 -->
+            <div class="projet-card">
+                <div class="projet-header">
+                    <h3>Exploration algorithmique</h3>
+                    <span class="projet-date">mars 2025 - avril 2025</span>
+                </div>
+                <div class="projet-context">
+                    <strong>Contexte :</strong> IUT de Lille - SAÉ BUT Informatique (Binôme)
+                </div>
+                <div class="projet-body">
+                    <p class="projet-description">
+                        Exploration et implémentation de solutions algorithmiques sur différentes structures
+                        de données (tableaux, listes, graphes) avec analyse comparative des performances.
+                        Le projet incluait la modélisation de problèmes, l'implémentation en Java POO,
+                        l'analyse de complexité algorithmique et la mesure des performances.
+                        Tests unitaires réalisés avec JUnit et suivi de version avec Git.
+                    </p>
+                    <h4>Compétences acquises :</h4>
+                    <ul class="competences-liste">
+                        <li>Analyse de complexité algorithmique</li>
+                        <li>Structures de données avancées (graphes, listes)</li>
+                        <li>Tests unitaires avec JUnit</li>
+                        <li>Rigueur, communication et gestion du temps en binôme</li>
+                    </ul>
+                    <div class="projet-liens">
+                        <a href="https://gitlab.univ-lille.fr/guillaume.senet.etu/sae-but1/-/tree/main/SAE_2.01-2.02-POO-IHM?ref_type=heads" class="lien-preuve">Lien Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 5 -->
+            <div class="projet-card">
+                <div class="projet-header">
+                    <h3>Site web de mobilité durable</h3>
+                    <span class="projet-date">novembre 2024</span>
+                </div>
+                <div class="projet-context">
+                    <strong>Contexte :</strong> IUT de Lille - SAÉ BUT Informatique (Équipe)
+                </div>
+                <div class="projet-body">
+                    <p class="projet-description">
+                        Conception d'un site web complet pour promouvoir un service de mobilité interne
+                        visant à réduire l'impact carbone. Le projet intègre deux fonctionnalités principales :
+                        un système de covoiturage et une location de vélos/trottinettes électriques.
+                        Réalisation incluant développement web (HTML/CSS avec VSCode)
+                    </p>
+                    <h4>Compétences acquises :</h4>
+                    <ul class="competences-liste">
+                        <li>Développement web : HTML5, CSS3,</li>
+                        <li>Travail d'équipe et coordination de projet</li>
+                        <li>Flexibilité et adaptation aux imprévus</li>
+                        <li>Communication et respect des choix collectifs</li>
+                    </ul>
+                    <div class="projet-liens">
+                        <a href="https://gitlab.univ-lille.fr/guillaume.senet.etu/sae-but1/-/tree/main/SAE_1.05-1.06_Site-HTML?ref_type=heads" class="lien-preuve">Lien Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 6 -->
+            <div class="projet-card">
+                <div class="projet-header">
+                    <h3>Jeu en langage C++</h3>
+                    <span class="projet-date">avril 2024</span>
+                </div>
+                <div class="projet-context">
+                    <strong>Contexte :</strong> Terminale STI2D - DM Individuel
+                </div>
+                <div class="projet-body">
+                    <p class="projet-description">
+                        Premier projet de programmation en C++ réalisé en autodidacte. Développement d'un
+                        jeu d'aventure par étapes où le joueur doit franchir différents obstacles tout en
+                        gérant ses points de vie pour atteindre une princesse. Ce projet a été l'occasion
+                        de découvrir la programmation de manière autonome, sans connaissances préalables du langage.
+                    </p>
+                    <h4>Compétences acquises :</h4>
+                    <ul class="competences-liste">
+                        <li>Apprentissage autodidacte du C++</li>
+                        <li>Logique de programmation et structures de contrôle</li>
+                        <li>Persévérance et résolution de problèmes</li>
+                        <li>Recherche documentaire et débogage autonome</li>
+                    </ul>
+                    <div class="projet-liens">
+                        <a href="https://github.com/senetguillaume/archive" class="lien-preuve">Lien Git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+            &copy; 2025 Guillaume SENET | Contact : <strong>senetguillaume@gmail.com</strong>
+        </p>
+    </footer>
+</main>
 
 </body>
 </html>
